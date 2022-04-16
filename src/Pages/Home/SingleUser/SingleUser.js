@@ -2,13 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const SingleUser = ({ user }) => {
+    const { name, id } = user || {};
     return (
         <div className='col-4 gy-3'>
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Id: {user.id}</h5>
-                    <p class="card-text">Name: {user.name}</p>
-                    <Link to="/" class="">Details</Link>
+            <div className="card shadow p-3 mb-5 bg-body rounded">
+                <div className="card-body">
+                    <h5 className="card-title">Name: {name}</h5>
+                    <p className="card-text">Id: {id}</p>
+                    <Link to={`/users/${id}`} >Users Details</Link>
                 </div>
             </div>
         </div>

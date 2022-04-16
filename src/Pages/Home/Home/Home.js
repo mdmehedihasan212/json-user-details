@@ -11,7 +11,6 @@ const Home = () => {
     }
     return (
         <div className='container'>
-            <h1>total users: {usersData.length}</h1>
             <div className="row">
                 {
                     usersData?.map(user => <SingleUser
