@@ -9,7 +9,7 @@ const UsersDetails = ({ user }) => {
                 <div className="card-body">
                     <h5 className="card-title">Name: {name}</h5>
                     <p className="card-text">Id: {id}</p>
-                    <Link to='/' >Users</Link>
+                    <Link to={`/users/${id}`} >Users Details</Link>
                 </div>
             </div>
         </div>
